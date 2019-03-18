@@ -4,6 +4,7 @@ ENV PROJECT_DIR=/var/www/html \
     APP_URL=localhost
 
 RUN docker-php-ext-install mysqli gettext
+RUN a2enmod rewrite
 
 COPY ./src $PROJECT_DIR
 COPY docker-entrypoint.sh /entrypoint.sh
