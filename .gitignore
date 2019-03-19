@@ -1,6 +1,6 @@
 ## Ahmet AKŞİT git ignore settings
 # PhpStorm settings
-\.idea/
+.idea/*
 ## end of Ahmet AKŞİT settings
 
 # Created by https://www.gitignore.io/api/phpstorm,codeigniter
