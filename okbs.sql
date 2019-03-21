@@ -2,6 +2,7 @@
 # Date: 2019-03-11 15:14:36
 # Generator: MySQL-Front 6.1  (Build 1.26)
 
+SET NAMES utf8;
 
 #
 # Structure for table "cms_aauth_groups"
@@ -104,7 +105,7 @@ CREATE TABLE `cms_aauth_users` (
 # Data for table "cms_aauth_users"
 #
 
-INSERT INTO `cms_aauth_users` VALUES (1,'test@gmail.com','04e1adb0fd3c47bf470297d02413eb230b51bee47c5d7dbe8c3561c50ccb1ada','test','test kullanıcı',1,1,'male.png',0,'2019-03-11 14:46:36','2019-03-11 14:46:36','2019-03-11 14:00:00',NULL,NULL,NULL,NULL,'::1',NULL);
+INSERT INTO `cms_aauth_users` VALUES(1,	'admin@localhost',	'8ac281a77be8d3eabe8a8e3b525d2ad4047b135a388c8d5337bf930a856d693d',	'admin',	'Admin Kullanıcı',	1,	1,	'male.png',	0,	'2019-03-19 13:29:34',	'2019-03-19 13:29:34',	'2019-03-19 13:00:00',	NULL,	NULL,	NULL,	NULL,	'172.22.0.1',	NULL),(2,	'ahmetaksit@gmail.com',	'3e0f1439423424eb5ec90c98762024e1c7e178eaeb6d622856c8ea4e3b2c0429',	'ahmetaksit',	'Ahmet AKŞİT',	1,	1,	'male.png',	0,	'2019-03-19 13:27:01',	'2019-03-19 13:27:01',	'2019-03-19 13:00:00',	NULL,	NULL,	NULL,	NULL,	'172.22.0.1',	NULL), (3,	'cskncms@gmail.com',	'00d36b44c9b81327633ee9db1fc755031b70034b1111d22b13540cac92e23363',	'cskncms',	'Coşkun EŞKİLER',	3,	1,	'male.png',	0,	'2019-03-19 13:30:20',	'2019-03-19 13:30:20',	'2019-03-19 13:00:00',	NULL,	NULL,	NULL,	NULL,	'172.22.0.1',	NULL);
 
 #
 # Structure for table "cms_menu"
@@ -165,7 +166,7 @@ CREATE TABLE `cms_options` (
 # Data for table "cms_options"
 #
 
-INSERT INTO `cms_options` VALUES (3,'app_name','Ozel Kalem Büro Sistemi'),(4,'email','ceskiner@sgk.gov.tr'),(5,'author','İzmir Yüksek Teknoloji Enstitüsü'),(6,'site_description','sss'),(7,'keywords','ss'),(22,'theme','skin-green_2-light'),(23,'version','1.0.0'),(29,'app_logo','iyte-logo-tur.png'),(30,'app_ico','iyte-logo-tur.png'),(31,'cms_theme','default'),(32,'web_theme','default'),(33,'app_login','planner-2641215-1920.jpg'),(34,'under_note','<p>Bir şeyler ters gitti ve onu d&uuml;zeltmeye &ccedil;alışıyoruz.<br />\r\nAnlayışınız i&ccedil;in teşekk&uuml;r ederiz</p>\r\n'),(35,'modal_title_color','6494AA'),(36,'modal_title_font_color','FFFFFF'),(40,'allowed_types','doc|docx'),(41,'max_file_size','100'),(42,'max_image_width','1024'),(43,'max_image_height','768'),(44,'media_folder','storage'),(45,'max_file_name_lenght','0'),(46,'max_upload_piece','10'),(47,'write_on','1'),(48,'file_space','1'),(49,'file_encryption','1'),(50,'app_short_name','OKBS'),(60,'ft_folder_status','1');
+INSERT INTO `cms_options` VALUES (3,'app_name','Ozel Kalem Büro Sistemi'),(4,'email','ahmetaksit@gmail.com'),(5,'author','İzmir Yüksek Teknoloji Enstitüsü'),(6,'site_description','sss'),(7,'keywords','ss'),(22,'theme','skin-green_2-light'),(23,'version','1.0.0'),(29,'app_logo','iyte-logo-tur.png'),(30,'app_ico','iyte-logo-tur.png'),(31,'cms_theme','default'),(32,'web_theme','default'),(33,'app_login','planner-2641215-1920.jpg'),(34,'under_note','<p>Bir şeyler ters gitti ve onu d&uuml;zeltmeye &ccedil;alışıyoruz.<br />\r\nAnlayışınız i&ccedil;in teşekk&uuml;r ederiz</p>\r\n'),(35,'modal_title_color','6494AA'),(36,'modal_title_font_color','FFFFFF'),(40,'allowed_types','doc|docx'),(41,'max_file_size','100'),(42,'max_image_width','1024'),(43,'max_image_height','768'),(44,'media_folder','storage'),(45,'max_file_name_lenght','0'),(46,'max_upload_piece','10'),(47,'write_on','1'),(48,'file_space','1'),(49,'file_encryption','1'),(50,'app_short_name','OKBS'),(60,'ft_folder_status','1');
 
 #
 # Structure for table "cms_popups"
