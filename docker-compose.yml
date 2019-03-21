@@ -35,12 +35,5 @@ services:
     depends_on:
       - database
 
-  visualizer:
-    image: dockersamples/visualizer:stable
-    ports:
-      - "8082:8080"
-    volumes:
-      - "/var/run/docker.sock:/var/run/docker.sock"
-
 volumes:
   db-data:
