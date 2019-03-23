@@ -1,0 +1,23 @@
+* {
+    font-family: Ubuntu, sans-serif
+}
+
+body {
+    background-image: url(../img/back_.jpg) !important;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0
+}
+
+.login-box {
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    border: 1px solid #d5d5d5;
+    -webkit-box-shadow: 6px 7px 32px 0 rgba(0, 0, 0, .75);
+    -moz-box-shadow: 6px 7px 32px 0 rgba(0, 0, 0, .75);
+    box-shadow: 6px 7px 32px 0 rgba(0, 0, 0, .75)
+}
