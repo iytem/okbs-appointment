@@ -11,7 +11,7 @@ services:
       - MYSQL_PASSWORD=veryhardpassword
     volumes:
       - db-data:/var/lib/mysql
-      - ${PWD}/okbs.sql:/docker-entrypoint-initdb.d/okbs.sql:ro
+      - ${PWD}/sqlscript/okbs.sql:/docker-entrypoint-initdb.d/okbs.sql:ro
     #ports:
     #  - "3306:3306"
     restart: always
@@ -21,7 +21,7 @@ services:
     image: okbs-appointment
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: /docker-compose/Dockerfile
     ports:
       - "80:80"
     depends_on:

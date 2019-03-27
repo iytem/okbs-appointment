@@ -7,7 +7,7 @@ RUN docker-php-ext-install mysqli gettext
 RUN a2enmod rewrite
 
 COPY ./src $PROJECT_DIR
-COPY docker-entrypoint.sh /entrypoint.sh
+COPY ./docker-compose/docker-entrypoint.sh /entrypoint.sh
 
 RUN sed -i 's/\r//' /entrypoint.sh
 
