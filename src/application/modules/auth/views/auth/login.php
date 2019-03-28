@@ -70,7 +70,7 @@
 
         <div class="form-group animated wow fadeInRight has-feedback <?= form_error('username') ? 'has-error' : ''; ?>"
              data-wow-duration="1s" data-wow-delay=".5s">
-            <input type="text" class="form-control" placeholder="Sicil Numaranız" name="username"
+            <input type="text" class="form-control" placeholder="E-Posta Adresiniz" name="username"
                    value="<?= set_value('username',''); ?>">
             <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
         </div>
