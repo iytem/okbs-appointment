@@ -41,7 +41,7 @@ services:
     ports:
       - "9000:9000"
     volumes:
-      - "${PWD}/src:/var/www/html"
+      - "${PWD}/src:/var/www/html:ro"
     depends_on:
       - database
     networks:
