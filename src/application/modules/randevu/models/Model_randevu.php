@@ -14,7 +14,8 @@ class Model_randevu extends MY_Model
         $this->primary_key = 'randevu_id';
         $this->column_order = array(null, '', 'randevu_ad_soyad', 'randevu_calistigi_yer', 'randevu_sebep', 'randevu_telefon_no', 'randevu_tarih', 'randevu_saat', 'randevu_birim','randevu_notlar', 'randevu_durum');
         $this->column_search = array('randevu_ad_soyad', 'randevu_calistigi_yer', 'randevu_sebep', 'randevu_telefon_no', 'randevu_tarih', 'randevu_saat',  'randevu_birim', 'randevu_notlar', 'randevu_durum');
-        $this->order = array('randevu_tarih' => 'asc','randevu_saat' => 'desc');
+        unset ($this->order);
+        //   $this->order = array('randevu_tarih' => 'asc','randevu_saat' => 'desc');
 
     }
 
