@@ -43,6 +43,8 @@ class Ziyaretci extends APP_Controller
     {
 
         $list = $this->db->where(array("ziyaretci_birim" => $this->aauth->get_user()->user_birim));
+
+        $this->db->order_by('ziyaretci_tarih asc, ziyaretci_saat asc');
         $list = $this->model_ziyaretci->get_datatables();
         $data = array();
         $no = $_POST['start'];

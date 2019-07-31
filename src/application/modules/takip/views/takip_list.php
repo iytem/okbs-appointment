@@ -66,7 +66,7 @@
                     filename: 'takip_<?= generate_key()?>',
                     title: 'Takip Listesi',
                     exportOptions: {
-                        columns: [0, 2, 3,4,5,6,7,8,9,10,11,12,13]
+                        columns: [0, 2, 3,4,5,6,7,8,9,10]
                     }
                 },
                 {
@@ -78,7 +78,7 @@
                     orientation: 'landscape',
                     pageSize: 'LEGAL',
                     exportOptions: {
-                        columns: [0, 2, 3,4,5,6,7,8,9,10,11,12,13]
+                        columns: [0, 2, 3,4,5,6,7,8,9,10]
                     },customize: function (doc) {
                         var tblBody = doc.content[1].table.body;
                         doc.content[1].layout = {
