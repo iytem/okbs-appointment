@@ -59,6 +59,7 @@ class Randevu extends APP_Controller
             }
 
         }
+        $this->db->order_by('randevu_tarih asc, randevu_saat asc');
         $list = $this->model_randevu->get_datatables();
         $data = array();
         $no = $_POST['start'];

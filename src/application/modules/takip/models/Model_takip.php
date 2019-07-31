@@ -14,7 +14,7 @@ class Model_takip extends MY_Model
         $this->primary_key = 'takip_id';
         $this->column_order = array(null, null,'takip_ad_soyad', 'takip_sicil_tc', 'takip_iletisim_bilgileri', 'takip_konu', 'takibin_geldigi_yer', 'takibi_baslatan_kullanici', 'takip_sorumlu', 'takip_unite', 'takip_gelis_tarihi', 'takip_sonuc_tarihi', 'takip_sonuc_notu','takip_durum');
         $this->column_search = array('takip_ad_soyad', 'takip_sicil_tc', 'takip_iletisim_bilgileri', 'takip_konu', 'takibin_geldigi_yer', 'takibi_baslatan_kullanici', 'takip_sorumlu', 'takip_unite', 'takip_gelis_tarihi', 'takip_sonuc_notu', 'takip_sonuc_tarihi', 'takip_gizli', 'takip_durum');
-        $this->order = array('takip_id' => 'desc');
+        $this->order = array('takip_gelis_tarihi' => 'asc');
 
     }
 

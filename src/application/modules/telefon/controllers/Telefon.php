@@ -61,6 +61,8 @@ class Telefon extends APP_Controller
         if ($sonuc == 1) {
             $list = $this->db->where(array("telefon_durum" => 2));
         }
+
+        $this->db->order_by('telefon_tarih asc, telefon_saat asc');
         $list = $this->model_telefon->get_datatables();
         $data = array();
         $no = $_POST['start'];

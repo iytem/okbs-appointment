@@ -69,6 +69,7 @@ class Home extends APP_Controller
 
         $user_birim = $this->aauth->get_user()->user_birim;
         $query = $this->db->select('*')->from('okbs_randevu')
+            ->order_by('randevu_tarih ASC, randevu_saat ASC')
             ->like('randevu_tarih', "$year-$month")
             ->where(array('randevu_durum'=>1,'randevu_birim'=>$user_birim ))
             ->get();
