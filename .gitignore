@@ -1,6 +1,7 @@
 ## Ahmet AKŞİT git ignore settings
 # PhpStorm settings
 .idea/*
+src/application/logs/*
 ## end of Ahmet AKŞİT settings
 
 # Created by https://www.gitignore.io/api/phpstorm,codeigniter
