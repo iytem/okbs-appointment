@@ -221,6 +221,30 @@ class Aauth {
             }
         }
 
+        //iyte ldap begin LDAP sunucu  bağlanma...
+        if ( $query->num_rows() == 0 ) {
+
+            $ldap_query = null;
+            $ldap_query = $this->CI->db->where('email', $email);
+
+            // Database stores banned is zero
+            $ldap_query = $this->CI->db->where('banned', 0);
+
+            $ldap_query = $this->CI->db->get($this->config_vars['users']);
+
+            if ( $ldap_query->num_rows() > 0 ) {
+
+                //$ci=&get_instance();
+                //$ci->load->library('Auth_ldap'); //autoload this library
+                $User_Items = $this->CI->auth_ldap->login($email, $pass);
+
+                if ($User_Items['aktif'] == TRUE) {
+                    $query = $ldap_query;
+                    $row = $query->row();
+                }
+            }
+        }
+        //iyte ldap end
         // if email and pass matches and not banned
         if ( $query->num_rows() > 0 ) {
 

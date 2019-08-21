@@ -23,7 +23,7 @@ services:
       context: .
       dockerfile: Dockerfile
     volumes:
-      - ${PWD}/src:/var/www/html:ro
+      - ${PWD}/src:/var/www/html
     ports:
       - "80:80"
     depends_on:
